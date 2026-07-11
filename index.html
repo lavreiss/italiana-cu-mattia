@@ -327,6 +327,32 @@
   footer{padding:36px 0 48px;color:var(--ink-soft);font-size:14px}
   .foot-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
+  /* ---------- blog card ---------- */
+  .blog-card{
+    display:block;
+    max-width:640px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:30px 32px;
+    text-decoration:none;color:var(--ink);
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .blog-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(188,85,49,.4);
+    box-shadow:0 22px 34px -26px rgba(46,38,32,.4);
+  }
+  .blog-card .bc-tag{
+    display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--sage-deep);font-weight:700;margin-bottom:12px;
+  }
+  .blog-card h3{font-size:22px;letter-spacing:.01em;margin-bottom:10px}
+  .blog-card p{font-size:15.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:16px}
+  .blog-card .bc-more{
+    font-size:15px;color:var(--terra-deep);font-weight:500;letter-spacing:.02em;
+  }
+
   /* reveal on scroll */
   .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
   .reveal.in{opacity:1;transform:none}
@@ -523,6 +549,22 @@
         <p>Un parcurs cu saptamani si obiective, aliniat la termenul tau real. Vezi mereu cat ai avansat.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="alt" id="blog">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow"><span class="it">Dal blog</span><span class="ro">din blog</span></div>
+      <h2>Ghiduri si sfaturi pentru drumul tau</h2>
+      <p>Articole scrise din experienta de la clasa -- ce functioneaza cu adevarat cand inveti italiana.</p>
+    </div>
+    <a class="blog-card reveal" href="blog/cat-dureaza-sa-inveti-italiana.html">
+      <span class="bc-tag">Ghid</span>
+      <h3>Cat dureaza sa inveti italiana de la zero?</h3>
+      <p>Drumul realist, faza cu faza, de la primele cuvinte pana la interviul de angajare in italiana -- si cei trei factori care decid cat de repede ajungi acolo.</p>
+      <span class="bc-more">Citeste articolul &rarr;</span>
+    </a>
   </div>
 </section>
 
